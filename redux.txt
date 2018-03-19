@@ -5,3 +5,11 @@ Store : is one data object for application .
 Reducer :update the Store .
 
 Action : activate the Reducer .
+
+---------------------------------------------------
+
+Reducer :is just function take 2 parameter (default state and as an action) .
+
+Action pass to reducer to activate different key of our function in order
+
+to update the store.
