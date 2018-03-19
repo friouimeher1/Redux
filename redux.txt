@@ -1,0 +1,7 @@
+Redux : hold global state for our application .
+
+Store : is one data object for application .
+
+Reducer :update the Store .
+
+Action : activate the Reducer .
