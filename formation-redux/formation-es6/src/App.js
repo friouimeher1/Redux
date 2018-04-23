@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import AGE,{AP, students,people } from './constants'
+import AGE,{AP, students,people,filterData } from './constants'
+import Add ,{ Divison } from './calculates/Calcul'
 class App extends Component {
+  constructor(props)
+  {
+    super(props)
+    this.state={
+      value:'App'
+    }
+    this.handleClick= this.handleClick.bind(this)
+  }
+  handleClick(e){
+    console.log(e)
+  }
   render() {
     console.log('students : ',students)
     console.log('')
@@ -21,6 +33,10 @@ class App extends Component {
       return sum +=c.price
     }, 0)
     console.log('Sum = ',sum)
+    console.log(filterData)
+const { value } =this.state
+console.log(Add(2,-3));
+console.log(Divison(2,0));
 
     return (
       <div className="App">
@@ -29,8 +45,11 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+            <input type='text'/>
+            <button onClick={ ()=>this.handleClick }>Filter</button>
+
         </p>
+          <h1>{ value }</h1>
       </div>
     );
   }

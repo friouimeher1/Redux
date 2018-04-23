@@ -9,3 +9,11 @@ export const AP =[
   {id:3,name:"JS",price:20},
   {id:4,name:"React",price:20}
 ]
+
+
+export const filterData =[
+  {abrivation:'TN',country:'Tunis'},
+  {abrivation:'FR',country:'France'},
+  {abrivation:'OM',country:'Oman'},
+  {abrivation:'AL',country:'Algerie'}
+]
